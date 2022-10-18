@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stylesheets/style2.css">
+    <style media="screen">
+    .all{
+      position: relative;
+    }
+      .headline{
+        position: relative;
+        bottom: 70px;
+        right: 5px;
+        text-align: center;
+      }
+      .boardimg {
+        width: 900px;
+        height: 400px;
+        position: absolute;
+        margin: 0 auto;
+        right: 0px;
+        bottom: 10px;
+        z-index: 1;
+      }
+      .board{
+        width: 900px;
+        height: 400px;
+        background: white;
+        border: 10px solid black;
+        margin: 0 auto;
+        position: relative;
+        top: 100px;
+        left: 0px;
+        border-radius: 10px;
+        z-index: 2;
+      }
+      .subboard1{
+        width: 30px;
+        height: 40px;
+        background: black;
+        margin: 0 auto;
+        position: relative;
+        top: -70px;
+        right: 435px;
+      }
+      .stick1{
+        width: 5px;
+        height: 80px;
+        background: black;
+        rotate: -45deg;
+        position: relative;
+        left: 50px;
+      }
+      .subboard2{
+        width: 30px;
+        height: 40px;
+        background: black;
+        margin: 0 auto;
+        position: relative;
+        top: -110px;
+        right: 250px;
+      }
+      .stick2{
+        width: 5px;
+        height: 80px;
+        background: black;
+        rotate: -45deg;
+        position: relative;
+        left: 50px;
+      }
+      .subboard3{
+        width: 30px;
+        height: 40px;
+        background: black;
+        margin: 0 auto;
+        position: relative;
+        top: -150px;
+        right: 50px;
+      }
+      .stick3{
+        width: 5px;
+        height: 80px;
+        background: black;
+        rotate: -45deg;
+        position: relative;
+        left: 50px;
+      }
+      .subboard4{
+        width: 30px;
+        height: 40px;
+        background: black;
+        margin: 0 auto;
+        position: relative;
+        top: -190px;
+        left: 150px;
+      }
+      .stick4{
+        width: 5px;
+        height: 80px;
+        background: black;
+        rotate: -45deg;
+        position: relative;
+        left: 50px;
+      }
+      .subboard5{
+        width: 30px;
+        height: 40px;
+        background: black;
+        margin: 0 auto;
+        position: relative;
+        top: -230px;
+        left: 350px;
+      }
+      .stick5{
+        width: 5px;
+        height: 80px;
+        background: black;
+        rotate: -45deg;
+        position: relative;
+        left: 50px;
+      }
+      .road1{
+        position: relative;
+        margin: 0 auto;
+        width: 5px;
+        height: 1000px;
+        background-color: black;
+        right: 300px;
+        top: -450px;
+      }
+      .road2{
+        position: relative;
+        margin: 0 auto;
+        width: 5px;
+        height: 1000px;
+        background-color: black;
+        right: -300px;
+        top: -1450px;
+      }
+      .road3{
+        position: relative;
+        margin: 0 auto;
+        width: 5px;
+        height: 1000px;
+        background-color: black;
+        right: -750px;
+        top: -2450px;
+      }
+      .road4{
+        position: relative;
+        margin: 0 auto;
+        width: 5px;
+        height: 1000px;
+        background-color: black;
+        right: 750px;
+        top: -3450px;
+      }
+      .roadline1_1{
+        position: relative;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        right: 525px;
+        top: -4350px;
+      }
+      .roadline1_2{
+        position: relative;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        right: 525px;
+        top: -4250px;
+      }
+      .roadline1_3{
+        position: relative;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        right: 525px;
+        top: -4150px;
+      }
+      .roadline1_4{
+        position: relative;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        right: 525px;
+        top: -4050px;
+      }
+      .roadline1_5{
+        position: relative;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        right: 525px;
+        top: -3950px;
+      }
+      .roadline1_6{
+        position: relative;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        right: 525px;
+        top: -3850px;
+      }
+      .roadline2_1{
+        position: relative;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        right: -525px;
+        top: -4650px;
+      }
+      .roadline2_2{
+        position: relative;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        right: -525px;
+        top: -4550px;
+      }
+      .roadline2_3{
+        position: relative;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        right: -525px;
+        top: -4450px;
+      }
+      .roadline2_4{
+        position: relative;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        right: -525px;
+        top: -4350px;
+      }
+      .roadline2_5{
+        position: relative;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        right: -525px;
+        top: -4250px;
+      }
+      .roadline2_6{
+        position: relative;
+        margin: 0 auto;
+        width: 10px;
+        height: 50px;
+        background-color: black;
+        right: -525px;
+        top: -4150px;
+      }
+      .boardstand{
+        width: 60px;
+        height: 460px;
+        background: black;
+        margin: 0 auto;
+        position: absolute;
+        top: 400px;
+        right: 430px;
+      }
+      .bridge{
+        width: 2300px;
+        height: 5px;
+        background-color: black;
+        position: absolute;
+        top: 855px;
+        right: -395px;
+      }
+      .bridge2{
+        width: 2300px;
+        height: 5px;
+        background-color: black;
+        position: absolute;
+        top: 930px;
+        right: -395px;
+      }
+      .balka1{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        display: flex;
+        top: 970px;
+        right: 30px;
+      }
+      .balka2{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 970px;
+        right: 80px;
+      }
+      .balka3{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 970px;
+        right: 130px;
+      }
+      .balka4{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 970px;
+        right: 180px;
+      }
+      .balka5{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 970px;
+        right: 230px;
+      }
+      .balka6{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 970px;
+        right: 280px;
+      }
+      .balka7{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 970px;
+        right: 330px;
+      }
+      .balka8{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 970px;
+        right: 380px;
+      }
+      .balka9{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 970px;
+        right: 430px;
+      }
+      .balka10{
+        width: 20px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 970px;
+        right: 480px;
+      }
+
+      .car{
+        position: absolute;
+        width: 200px;
+        top: 460px;
+        left: -20px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="all">
+
+      <div class="board">
+        <div class="boardstand"></div>
+        <div class="bridge"></div>
+        <div class="bridge2"></div>
+        <div class="car"><img src="https://4.downloader.disk.yandex.ru/preview/4651d7ba1157cc91a3c3a09923679834bd4f8149e22651ba665cfec348d7af23/inf/cRBqjgelbbpdx6AyZIUwLKCTZ55R-ldbFbyQBvPtmGL9G7UJFO3YflzSTD3UgHsTLr7BNRKt-OA2GB7XFQQ-vg%3D%3D?uid=1130000061268787&filename=CAR.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=1130000061268787&tknv=v2&size=2559x1359" alt="" height="300px"></div>
+        <div class="boardimg"><img src="https://2.downloader.disk.yandex.ru/preview/b43029b11681fa70b7d96288d1f385dae8bc172ae54a42080bf2dcd97bbe3ee5/inf/WfEo7cs9pkOc3Q_Q5RcB3i1HjRIhTl_XMbEEcCkwW5mCRFFWbKuWL4dGhVA5oIR70SNHJS67ATKSH-zFCvtQlw%3D%3D?uid=1130000061268787&filename=board1.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=1130000061268787&tknv=v2&size=2560x1374" alt="" height="415px" width="900"></div>
+        <div class="subboard1">
+          <div class="stick1"></div>
+        </div>
+        <div class="subboard2">
+          <div class="stick2"></div>
+        </div>
+        <div class="subboard3">
+          <div class="stick3"></div>
+        </div>
+        <div class="subboard4">
+          <div class="stick4"></div>
+        </div>
+        <div class="subboard5">
+          <div class="stick5"></div>
+        </div>
+        <div class="headline">
+          <h1>
+            ANGLECIA <br>
+            PRO <br>
+            DISPLAY <br>
+          </h1>
+        </div>
+      </div>
+
+      <div class="road1"></div>
+      <div class="road2"></div>
+      <div class="road3"></div>
+      <div class="road4"></div>
+
+      <div class="roadline1_1"></div>
+      <div class="roadline1_2"></div>
+      <div class="roadline1_3"></div>
+      <div class="roadline1_4"></div>
+      <div class="roadline1_5"></div>
+      <div class="roadline1_6"></div>
+
+      <div class="roadline2_1"></div>
+      <div class="roadline2_2"></div>
+      <div class="roadline2_3"></div>
+      <div class="roadline2_4"></div>
+      <div class="roadline2_5"></div>
+      <div class="roadline2_6"></div>
+
+      <div class="balka1"></div>
+      <div class="balka2"></div>
+      <div class="balka3"></div>
+      <div class="balka4"></div>
+      <div class="balka5"></div>
+      <div class="balka6"></div>
+      <div class="balka7"></div>
+      <div class="balka8"></div>
+      <div class="balka9"></div>
+      <div class="balka10"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@font-face {
+    font-family: 'Anglecia Pro Display';
+    src: url('../fonts/AngleciaProDisplay.eot');
+    src: url('../fonts/AngleciaProDisplay.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AngleciaProDisplay.woff2') format('woff2'),
+        url('../fonts/AngleciaProDisplay.woff') format('woff'),
+        url('../fonts/AngleciaProDisplay.ttf') format('truetype'),
+        url('../fonts/AngleciaProDisplay.svg#AngleciaProDisplay') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Anglecia Pro Display Bold';
+    src: url('../fonts/AngleciaProDisplay-Bold.eot');
+    src: url('../fonts/AngleciaProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AngleciaProDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/AngleciaProDisplay-Bold.woff') format('woff'),
+        url('../fonts/AngleciaProDisplay-Bold.ttf') format('truetype'),
+        url('../fonts/AngleciaProDisplay-Bold.svg#AngleciaProDisplay-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Anglecia Pro Display Black';
+    src: url('../fonts/AngleciaProDisplay-Black.eot');
+    src: url('../fonts/AngleciaProDisplay-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AngleciaProDisplay-Black.woff2') format('woff2'),
+        url('../fonts/AngleciaProDisplay-Black.woff') format('woff'),
+        url('../fonts/AngleciaProDisplay-Black.ttf') format('truetype'),
+        url('../fonts/AngleciaProDisplay-Black.svg#AngleciaProDisplay-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+.headline{
+  font-family: 'Anglecia Pro Display Bold';
+  font-size: 60px;
+  font-style: italic;
+}
